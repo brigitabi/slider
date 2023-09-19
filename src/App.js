@@ -50,8 +50,8 @@ function App() {
 
 
   return (
-    <div> <p className='text-3xl italic font-montserrat flex justify-center text-[black]'> Embark on a Visual Journey through Nature with This Image Slider</p>
-    <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+    <div> <p className='text-2xl text-center py-2 pl-4 italic font-montserrat flex justify-center text-[black]'> Beautiful Nature Image Slider</p>
+    <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 pt-2 px-4 relative group'>
    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'></div>
     
     
