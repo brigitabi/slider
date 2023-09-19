@@ -50,6 +50,7 @@ function App() {
 
 
   return (
+    <div> <p className='text-3xl italic font-montserrat flex justify-center text-[black]'> Embark on a Visual Journey through Nature with This Image Slider</p>
     <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'></div>
     
@@ -66,9 +67,11 @@ function App() {
         <div key={slideIndex} onClick={() => goToSlide(slideIndex)}
         className='text-2xl cursor-pointer'><RxDotFilled /></div>
       ))}
+        <div className="absolute bottom-1 left-0 right-0 text-center text-gray-600 font-montserrat">
+           Developed by Brigita 🚀
+      </div>
     </div>
-
-
+    </div>
     </div>
   );
 }
