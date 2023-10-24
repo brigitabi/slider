@@ -30,22 +30,22 @@ function App() {
     },
   ]
 
-  const [currentIndex, seCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length -1 : currentIndex -1;
-    seCurrentIndex(newIndex);
+    setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
     const isLastSlide = currentIndex === slides.length - 1; 
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    seCurrentIndex(newIndex);
+    setCurrentIndex(newIndex);
   };
 
   const goToSlide = (slideIndex) => {
-    seCurrentIndex(slideIndex);
+    setCurrentIndex(slideIndex);
   }
 
 
